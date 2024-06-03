@@ -36,7 +36,21 @@ export default {
 </script>
 
 <template>
-
+  <header>
+    <h1>Header</h1>
+  </header>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col" v-for="project in projects.data">
+          {{ project.title }}
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <h1>Footer</h1>
+  </footer>
 </template>
 
 <style></style>
